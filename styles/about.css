@@ -1,0 +1,161 @@
+:root {
+  --primary-color: #000000;
+  --primary-color-highlight: grey;
+  --bs-body-bg: #faf9f6;
+  --bs-body-font-family: 'Inter', sans-serif;
+}
+
+body {
+  height: 500px;  
+  padding-top: 70px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  top: 23px;
+  font-family: "Inter", sans-serif;
+  font-weight: bolder;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: large;
+  color: #1c1c1c;
+  font-family: "Inter", sans-serif;
+  margin-left: 15px;
+}
+
+.nav-link:hover {
+  color: rgb(59, 59, 59);
+  font-weight: 700;
+}
+
+.navbar-light {
+  background-color: #FAF9F6 !important;
+  border: none !important;
+  border-width: 0 !important;
+}
+
+.navbar-toggler  {  
+  border: none;  
+  margin-top: 5px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.showcase {
+  height: calc(100vh - 20px);
+  background-image: url('../assets/background.JPG') !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+}
+
+@media screen and (min-width: 1024px) {
+  .showcase {
+    background-position: top;
+  }
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-text {
+    font-family: "Limelight", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+    opacity: 0; 
+    animation: opacityOn 5s normal forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes opacityOn {
+    25% {
+        opacity: 1;
+    }
+    100% {
+      opacity: 1;
+  }
+
+}
+
+.by-glebsfilm {
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  text-align: center;
+  opacity: 0; 
+  animation: opacityOn 5s normal forwards;
+  animation-delay: 1s;
+}
+
+.btn {
+  border-radius: 40px;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  opacity: 0; 
+  animation: opacityOn 5s normal forwards;
+  animation-delay: 1.5s;
+}
+
+.btn:hover {
+  background-color: rgb(104, 104, 104);
+  transform: scale(1.05);
+  transition: all 0.5s;
+}
+
+.btn-view {
+  border: 0px;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-family: "Mukta", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.btn-view:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-view:active {
+  background-color: rgb(67, 67, 67) !important;
+}
+
+.copyright {
+  color: #000000;
+  text-align: center;
+  font-size: 15px;
+}
+
+.glebsfilm-logo {
+  height: 20px;
+}
