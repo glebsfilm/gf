@@ -121,7 +121,7 @@ a {
 }
 
 .showcase {
-  height: calc(100vh);
+  height: calc(100vh - 20px);
   background-image: url('../assets/logo_square.jpg') !important;
   background-repeat: no-repeat;
   background-size: cover;
