@@ -177,6 +177,15 @@ a {
   font-weight: 700;
 }
 
+.footer-logo {
+  width: 38px
+}
+
+.footer-lomo-logo {
+  width: 120px;
+  padding-left: 6px;
+}
+
 .copyright {
   color: #000000;
   text-align: center;
